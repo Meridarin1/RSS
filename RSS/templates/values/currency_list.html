@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block head_title %} Currency List {% endblock head_title %}
+{% block content %}
+<br/>
+    <h3>Pick date to view currency:</h3>
+
+    {% for object in object_list %}
+        <a href="{% url 'detail' object.id %}">{{ object.date }}</a><br/>
+    {% empty %}
+
+    {% endfor %}
+
+{% endblock content %}

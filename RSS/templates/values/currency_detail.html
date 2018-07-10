@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block head_title %} Currency {% endblock head_title %}
+{% block content %}
+<br/>
+<h3>Currency:</h3>
+
+    <p>USD  {{ object.USD }} = 1 EUR</p>
+    <p>JPY  {{ object.JPY }} = 1 EUR</p>
+    <p>BGN  {{ object.BGN }} = 1 EUR</p>
+    <p>CZK  {{ object.CZK }} = 1 EUR</p>
+{% endblock content %}
